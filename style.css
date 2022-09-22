@@ -1,0 +1,216 @@
+*{  padding: 0;
+    left: 0;
+    color: #e38815;
+    font-family: 'Archivo Black', sans-serif;
+font-family: 'Secular One', sans-serif;}
+    .columna{ 
+    grid-template-areas: 
+    " header "
+    " section "
+    " footer ";
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: black;
+}
+.cotizacion{
+    position: relative;
+    
+    height:  200px;}
+.header{grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center ;}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto_titulo{border-bottom: dashed 2px #e55015;}
+.slogan{border-bottom: dashed 2px #e55015}
+.section{
+    grid-area: section;
+    display:grid ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "peces filtros calentadores"
+    "herramientas peceras sustratos"
+    "luces plantas insumos"}
+    .section
+    {display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 9fr;
+    grid-template-areas: 
+    "peces"
+    "filtros"
+    "calentadores"
+    "herramientas"
+    "peceras"
+    "sustratos"
+    "luces"
+    "plantas"
+    "insumos";}
+@media screen and (min-width: 720px){
+    .section{
+        grid-area: section;
+        display:grid ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "peces filtros calentadores"
+        "herramientas peceras sustratos"
+        "luces plantas insumos"}}
+    .section-conocenos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+.peces{grid-area: peces;
+    background-image: url(./imagenes/peces.jfif);
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;;
+    margin: 25px;
+    transition: height 2s ;}
+    .peces:hover{
+    height: 265px;}
+.filtro{
+    grid-area: filtros;
+    background-image: url(./imagenes/filtro.jfif);
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 25px;
+    transition: height 2s; }
+.filtro:hover{
+        height: 265px;}    
+.calentadores{
+    grid-area: calentadores;
+    background-image: url(./imagenes/calentadores.jfif);
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 25px;
+    transition: height 2s ;}
+    .calentadores:hover{
+    height: 265px;}
+.herramientas{
+    grid-area: herramientas;
+    background-image: url(./imagenes/herramientas.jfif);
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 25px;
+    transition: height 2s ;}
+    .herramientas:hover{
+    height: 265px;}
+.peceras{
+    grid-area:peceras;
+    background-image: url(./imagenes/peceras.jfif);
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 25px;
+    transition: height 2s ;}
+    .peceras:hover{
+    height: 265px;}
+.sustratos{
+    grid-area:sustratos;
+    background-image: url(./imagenes/sustratos.jfif);
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 25px;
+    transition: height 2s ;}
+    .sustratos:hover{
+    height: 265px;}
+.luces{
+    grid-area:luces;
+    background-image: url(./imagenes/luces.jfif);
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 25px;
+    transition: height 2s ;}
+    .luces:hover{
+    height: 265px;}
+.plantas{
+    background-image: url(./imagenes/plantas.jfif);
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 25px;
+    transition: height 2s ;}
+    .plantas:hover{
+    height: 265px;}
+.insumos{
+    background-image: url(./imagenes/insumos.jpg);
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 25px;
+    transition: height 2s ;}
+    .insumos:hover{
+    height: 265px;}
+
+
+.footer{grid-area: footer;
+    display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-template-areas:
+"Insta"
+"Ubi"
+"Cono"
+"Coti";}
+.Insta{grid-area: Insta;}
+.Ubi{grid-area: Ubi;}
+.Cono{grid-area: Cono}
+.Coti{grid-area: Coti;}
+@media screen and (min-width: 720px){
+    .section{
+        grid-area: section;
+        display:grid ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "peces filtros calentadores"
+        "herramientas peceras sustratos"
+        "luces plantas insumos"}
+        .footer{grid-area: footer;
+            display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "Insta Ubi Cono Coti";}}
